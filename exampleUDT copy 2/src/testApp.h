@@ -3,6 +3,9 @@
 #include "ofMain.h"
 #include "ofxiPhone.h"
 #include "ofxiPhoneExtras.h"
+
+#include "ofxOpenCv.h"
+
 #include "ofxCoreMotion.h"
 
 
@@ -13,8 +16,8 @@
 #include "Ball.h"
 #include "Mario.h"
 
-#define HOST "10.0.0.6"
-#define HOST2 "10.0.0.5"
+#define HOST "128.122.151.166"
+#define HOST2 "192.168.2.2"
 #define PORT 8000
 #define PORT2 12000
 

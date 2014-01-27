@@ -359,6 +359,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				BB16E9930F2B1E5900518274 /* libs */,
 				521AB6E2183BB5560098E5F0 /* glu-ios.a */,
 				521AB6E3183BB5560098E5F0 /* glu.a */,
 				521AB6E0183BB5390098E5F0 /* freeimage.a */,
@@ -366,7 +367,6 @@
 				BB24DD8B10DA77E000E9C588 /* data */,
 				BB24E1F710DAA51900E9C588 /* openFrameworks */,
 				BB16F26B0F2B646B00518274 /* addons */,
-				BB16E9930F2B1E5900518274 /* libs */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
 			name = CustomTemplate;
@@ -797,6 +797,10 @@
 					../../../addons/ofxOsc/libs/oscpack/src,
 					../../../addons/ofxOsc/libs,
 					../../../addons/ofxOsc/libs/oscpack,
+					"/Users/test/Documents/of_v0.8.0_ios_release/addons/ofxQCAR/exampleUDT\\ copy\\ 2/ofxOpenCv/libs/opencv/lib/ios",
+					"/Users/test/Documents/of_v0.8.0_ios_release/addons/ofxQCAR/exampleUDT\\ copy\\ 2/ofxOpenCv/libs/opencv/lib/osx",
+					"/Users/test/Documents/of_v0.8.0_ios_release/addons/ofxQCAR/exampleUDT\\ copy\\ 2/libs/opencv/lib/ios",
+					"/Users/test/Documents/of_v0.8.0_ios_release/addons/ofxQCAR/exampleUDT\\ copy\\ 2/libs/opencv/lib/osx",
 				);
 				PRODUCT_NAME = UserDefinedTargets;
 				PROVISIONING_PROFILE = "";
@@ -832,6 +836,10 @@
 					../../../addons/ofxOsc/libs/oscpack/src,
 					../../../addons/ofxOsc/libs,
 					../../../addons/ofxOsc/libs/oscpack,
+					"/Users/test/Documents/of_v0.8.0_ios_release/addons/ofxQCAR/exampleUDT\\ copy\\ 2/ofxOpenCv/libs/opencv/lib/ios",
+					"/Users/test/Documents/of_v0.8.0_ios_release/addons/ofxQCAR/exampleUDT\\ copy\\ 2/ofxOpenCv/libs/opencv/lib/osx",
+					"/Users/test/Documents/of_v0.8.0_ios_release/addons/ofxQCAR/exampleUDT\\ copy\\ 2/libs/opencv/lib/ios",
+					"/Users/test/Documents/of_v0.8.0_ios_release/addons/ofxQCAR/exampleUDT\\ copy\\ 2/libs/opencv/lib/osx",
 				);
 				PRODUCT_NAME = UserDefinedTargets;
 				PROVISIONING_PROFILE = "";
@@ -860,9 +868,35 @@
 				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
 				GCC_WARN_PROTOTYPE_CONVERSION = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(OF_CORE_HEADERS)";
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../addons/ofxOpenCv/libs,
+					../../../addons/ofxOpenCv/libs/opencv,
+					../../../addons/ofxOpenCv/libs/opencv/include,
+					../../../addons/ofxOpenCv/libs/opencv/include/opencv,
+					../../../addons/ofxOpenCv/libs/opencv/include/opencv2,
+					../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core,
+					../../../addons/ofxOpenCv/libs/opencv/include/opencv2/features2d,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					../ofxOpenCv/libs,
+					"$(OF_CORE_LIBS)",
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_legacy.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_flann.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/zlib.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_imgproc.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_highgui.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_objdetect.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_video.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_gpu.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_contrib.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_ml.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_core.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_calib3d.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_features2d.a,
+				);
 				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
@@ -888,9 +922,35 @@
 				GCC_THUMB_SUPPORT = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(OF_CORE_HEADERS)";
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../addons/ofxOpenCv/libs,
+					../../../addons/ofxOpenCv/libs/opencv,
+					../../../addons/ofxOpenCv/libs/opencv/include,
+					../../../addons/ofxOpenCv/libs/opencv/include/opencv,
+					../../../addons/ofxOpenCv/libs/opencv/include/opencv2,
+					../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core,
+					../../../addons/ofxOpenCv/libs/opencv/include/opencv2/features2d,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					../ofxOpenCv/libs,
+					"$(OF_CORE_LIBS)",
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_legacy.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_flann.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/zlib.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_imgproc.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_highgui.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_objdetect.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_video.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_gpu.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_contrib.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_ml.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_core.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_calib3d.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_features2d.a,
+				);
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
